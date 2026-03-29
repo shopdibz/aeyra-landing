@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aeyra.shopdibz.com/sitemap.xml
+
+# LLM Context File
+# https://aeyra.shopdibz.com/llm.txt

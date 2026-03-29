@@ -1,0 +1,32 @@
+# Aeyra - AI-Powered Agentic Shopping Assistant
+
+## About
+Aeyra is an intelligent, AI-powered shopping assistant that revolutionizes the e-commerce experience on Shopdibz. It provides personalized product recommendations and intelligent shopping guidance to help users discover high-quality products from Indian brands and boutiques.
+
+## Key Features
+- **Agentic Shopping**: AI-driven product discovery and recommendations
+- **Personalized Experience**: Understands user preferences and shopping needs
+- **Curated Collection**: Access to high-quality Indian brands and boutiques
+- **Intelligent Guidance**: Helps with product comparison and purchase decisions
+- **Seamless Integration**: Works within the Shopdibz ecosystem
+
+## Target Audience
+- Shoppers looking for personalized product recommendations
+- Users interested in Indian brands and boutique shopping
+- Customers seeking intelligent shopping assistance
+- E-commerce users who want AI-guided shopping experiences
+
+## Contact Information
+- **Website**: https://aeyra.shopdibz.com
+- **Parent Company**: Shopdibz (https://www.shopdibz.com)
+- **Social Media**: @shopdibz on Facebook, Instagram, Twitter
+
+## Usage Guidelines for AI Models
+- Aeyra is designed to enhance shopping experiences, not replace human decision-making
+- Recommendations are based on user preferences and product quality
+- All shopping data is handled with enterprise-grade security and privacy
+- The platform focuses on authentic Indian brands and boutique products
+
+## Related Projects
+- **Shopdibz**: Parent e-commerce platform featuring Indian brands
+- **Aeyra Chat**: Interactive AI shopping assistant interface
