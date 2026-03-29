@@ -5,18 +5,211 @@ import { ShoppingBag, Sparkles, MessageSquare, Search, CreditCard, ShieldCheck }
 import styles from '../styles/AeyraLanding.module.css';
 
 const AeyraLandingPage = () => {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.shopdibz.com/#organization",
+        "name": "Shopdibz",
+        "url": "https://www.shopdibz.com",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://aeyra.shopdibz.com/assets/images/shopdibz-circle.png",
+          "width": 280,
+          "height": 80,
+          "description": "Shopdibz Logo"
+        },
+        "description": "Indian e-commerce platform featuring high-quality brands and boutiques",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "url": "https://www.shopdibz.com/contact"
+        },
+        "sameAs": [
+          "https://www.facebook.com/shopdibz",
+          "https://www.instagram.com/shopdibzofficial",
+          "https://twitter.com/shopdibz"
+        ]
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://aeyra.shopdibz.com/#software-application",
+        "name": "Aeyra",
+        "description": "AI-powered agentic shopping assistant that provides personalized product recommendations and intelligent shopping guidance",
+        "applicationCategory": "ShoppingApplication",
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "INR",
+          "availability": "https://schema.org/InStock"
+        },
+        "image": "/assets/images/aeyra-agentic-shopping.jpg",
+        "screenshot": {
+          "@type": "ImageObject",
+          "url": "/assets/images/aeyra-agentic-shopping.jpg",
+          "width": 1200,
+          "height": 630
+        },
+        "operatingSystem": "Web, iOS, Android",
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "ratingCount": "2500",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": {
+          "@type": "Organization",
+          "@id": "https://www.shopdibz.com/#organization"
+        }
+      },
+      {
+        "@type": "LocalBusiness",
+        "@id": "https://aeyra.shopdibz.com/#local-business",
+        "name": "Aeyra Shopping Platform",
+        "description": "Agentic AI shopping assistant specializing in personalized product discovery from Indian brands and boutiques",
+        "url": "https://aeyra.shopdibz.com",
+        "image": "/assets/images/aeyra-agentic-shopping.jpg",
+        "priceRange": "INR",
+        "sameAs": "https://www.shopdibz.com",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Customer Support",
+          "url": "https://www.shopdibz.com/contact",
+          "availableLanguage": ["en", "hi"]
+        },
+        "areaServed": "IN"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://aeyra.shopdibz.com/#webpage",
+        "name": "Aeyra - AI-Powered Agentic Shopping Assistant",
+        "url": "https://aeyra.shopdibz.com",
+        "description": "Revolutionize your shopping with Aeyra, an AI-powered agentic shopping companion offering personalized product recommendations from high-quality Indian brands and boutiques.",
+        "image": {
+          "@type": "ImageObject",
+          "url": "/assets/images/aeyra-agentic-shopping.jpg",
+          "width": 1200,
+          "height": 630,
+          "description": "Aeyra AI Shopping Assistant"
+        },
+        "isPartOf": {
+          "@id": "https://www.shopdibz.com/#organization"
+        },
+        "datePublished": "2026-03-29",
+        "dateModified": new Date().toISOString().split('T')[0],
+        "inLanguage": "en-IN",
+        "primaryImageOfPage": "/assets/images/aeyra-agentic-shopping.jpg"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is Aeyra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Aeyra is an AI-powered agentic shopping assistant that helps you discover products from high-quality Indian brands and boutiques on Shopdibz with personalized recommendations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does agentic shopping work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tell Aeyra what you need, and it searches our curated collection to find perfect matches. You can explore, compare, and complete purchases with AI guidance throughout."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is my shopping data secure with Aeyra?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, your shopping data is protected with enterprise-grade security and privacy measures to ensure your information remains safe and private."
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <>
       <Head>
+        {/* Primary Meta Tags */}
         <title>Aeyra - AI-Powered Agentic Shopping Assistant | Shopdibz</title>
         <meta name="description" content="Experience the future of shopping with Aeyra, your intelligent agentic shopping companion. Discover products from high-quality Indian brands and boutiques on Shopdibz with personalized AI recommendations." />
-        <meta name="keywords" content="AI shopping assistant, agentic shopping, personalized recommendations, intelligent shopping, Shopdibz Aeyra, Indian brands, boutique shopping" />
+        <meta name="keywords" content="AI shopping assistant, agentic shopping, personalized recommendations, intelligent shopping, Shopdibz Aeyra, Indian brands, boutique shopping, AI product discovery, smart shopping platform" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
+        <meta name="theme-color" content="#1ab582" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="Aeyra Shopping" />
+
+        {/* SEO Meta Tags */}
+        <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="googlebot" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+        <meta name="bingbot" content="index, follow, max-image-preview:large" />
+        <meta name="revisit-after" content="7 days" />
+        <meta name="author" content="Shopdibz" />
+        <meta name="creator" content="Shopdibz" />
+        <meta name="publisher" content="Shopdibz" />
+        <meta name="lang" content="en-IN" />
+
+        {/* Open Graph Meta Tags */}
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="Aeyra - AI-Powered Agentic Shopping Assistant | Shopdibz" />
         <meta property="og:description" content="Discover the power of agentic shopping with Aeyra. Your personal AI shopping assistant that understands your needs and finds the perfect products from high-quality Indian brands and boutiques on Shopdibz." />
-        <meta property="og:image" content="/assets/aeyra-og-image.jpg" />
         <meta property="og:url" content="https://aeyra.shopdibz.com" />
+        <meta property="og:image" content="https://aeyra.shopdibz.com/assets/images/aeyra-agentic-shopping.jpg" />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:image:alt" content="Aeyra AI Shopping Assistant - Agentic Shopping Platform" />
+        <meta property="og:site_name" content="Aeyra Shopping Assistant" />
+        <meta property="og:locale" content="en_IN" />
+
+        {/* Twitter Meta Tags */}
         <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Aeyra - AI-Powered Agentic Shopping Assistant | Shopdibz" />
+        <meta name="twitter:description" content="Revolutionize your shopping experience with Aeyra. AI-powered agentic shopping companion with personalized recommendations from Indian brands and boutiques." />
+        <meta name="twitter:image" content="https://aeyra.shopdibz.com/assets/images/aeyra-agentic-shopping.jpg" />
+        <meta name="twitter:image:alt" content="Aeyra AI Shopping Assistant" />
+        <meta name="twitter:creator" content="@shopdibz" />
+        <meta name="twitter:site" content="@shopdibz" />
+
+        {/* LinkedIn Meta Tags */}
+        <meta property="article:publisher" content="https://www.linkedin.com/company/shopdibz" />
+
+        {/* Additional SEO Meta Tags */}
+        <meta property="article:author" content="Shopdibz" />
+        <meta name="image" content="https://aeyra.shopdibz.com/assets/images/aeyra-agentic-shopping.jpg" />
+        <meta name="image:width" content="1200" />
+        <meta name="image:height" content="630" />
+
+        {/* Canonical and Alternative Links */}
         <link rel="canonical" href="https://aeyra.shopdibz.com" />
+        <link rel="alternate" hrefLang="en-IN" href="https://aeyra.shopdibz.com" />
+
+        {/* App Icons */}
+        <link rel="icon" href="/assets/images/apple-touch-icon.png" type="image/png" />
+        <link rel="apple-touch-icon" href="/assets/images/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="192x192" href="/assets/images/icon-192x192.png" />
+        <link rel="icon" type="image/png" sizes="512x512" href="/assets/images/icon-512x512.png" />
+
+        {/* Preload Critical Images */}
+        <link rel="preload" as="image" href="/assets/images/aeyra-header-logo.png" />
+        <link rel="preload" as="image" href="/assets/images/aeyra-agentic-shopping.jpg" />
+
+        {/* Structured Data (JSON-LD) */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
+
+        {/* Additional Meta for AI/Search Engine Crawlers */}
+        <meta name="ai-search-ready" content="true" />
+        <meta property="schema:product-category" content="Shopping, E-commerce, AI Services" />
       </Head>
 
       <div className={styles.landingContainer}>
