@@ -334,7 +334,7 @@ const AeyraLandingPage = () => {
         <section className={styles.ctaSection}>
           <div className={styles.ctaContainer}>
             <h2>Ready to Experience the Future of Shopping?</h2>
-            <p style={{color:"#2a2a2a"}}>Join thousands of satisfied shoppers who have discovered the power of agentic shopping.</p>
+            <p style={{color:"#ffffff"}}>Join thousands of satisfied shoppers who have discovered the power of agentic shopping.</p>
             <Link href="https://www.shopdibz.com/aeyra/chat" className={styles.ctaBtn}>
               Start Your Journey
             </Link>
