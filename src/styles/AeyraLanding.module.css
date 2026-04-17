@@ -40,7 +40,7 @@
 }
 
 /* Ensure content sits above the glowing background */
-.heroSection, .featuresSection, .howItWorksSection, .ctaSection {
+.heroSection, .featuresSection, .howItWorksSection, .ctaSection, .brandInvitationSection {
   position: relative;
   z-index: 1;
 }
@@ -399,6 +399,58 @@
 .ctaBtn:hover {
   transform: translateY(-2px) scale(1.02);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Brand Invitation Section */
+.brandInvitationSection {
+  background: #ffffff;
+  color: #1a202c;
+  text-align: center;
+  padding: 80px 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.brandInvitationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.brandInvitationSection h2 {
+  font-size: clamp(2rem, 4vw, 2.5rem);
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  letter-spacing: -0.02em;
+  background: linear-gradient(135deg, #1ab582, #5b4b9d);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.brandInvitationSection p {
+  font-size: 1.15rem;
+  margin-bottom: 2.5rem;
+  opacity: 0.8;
+  line-height: 1.6;
+  color: #4a5568;
+}
+
+.brandInvitationBtn {
+  background: linear-gradient(135deg, #1ab582, #5b4b9d);
+  color: white;
+  padding: 16px 32px;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 15px rgba(26, 181, 130, 0.25);
+}
+
+.brandInvitationBtn:hover {
+  transform: translateY(-2px) scale(1.02);
+  box-shadow: 0 8px 25px rgba(26, 181, 130, 0.4);
 }
 
 /* Footer */

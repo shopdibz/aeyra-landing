@@ -341,6 +341,17 @@ const AeyraLandingPage = () => {
           </div>
         </section>
 
+        {/* Brand Invitation Section */}
+        <section className={styles.brandInvitationSection}>
+          <div className={styles.brandInvitationContainer}>
+            <h2>Are You an Indian Brand or Boutique?</h2>
+            <p>Join Shopdibz and Aeyra - the exclusive platform for Indian brands and boutiques. Register your brand, get verified as an official Indian brand, and showcase your products to discerning customers.</p>
+            <Link href="https://www.brandhub.shopdibz.com" className={styles.brandInvitationBtn} target="_blank" rel="noopener noreferrer">
+              Register Your Brand
+            </Link>
+          </div>
+        </section>
+
         {/* Footer */}
         <footer className={styles.footer}>
           <div className={styles.footerContent}>
