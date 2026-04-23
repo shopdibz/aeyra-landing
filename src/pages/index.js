@@ -5,6 +5,27 @@ import { ShoppingBag, Sparkles, MessageSquare, Search, CreditCard, ShieldCheck }
 import styles from '../styles/AeyraLanding.module.css';
 
 const AeyraLandingPage = () => {
+
+  const faqContent = [
+    {
+      question: "What is Aeyra?",
+      answer: "Aeyra is an AI-powered agentic shopping assistant that helps you discover products from high-quality Indian brands and boutiques on Shopdibz with personalized recommendations."
+    },
+    {
+      question: "How does agentic shopping work?",
+      answer: "Tell Aeyra what you need, and it searches our curated collection to find perfect matches. You can explore, compare, and complete purchases with AI guidance throughout."
+    },
+    {
+      question: "What kind of brands can I find on Shopdibz?",
+      answer: "Shopdibz features a carefully curated selection of domestic brands, traditional artisanal products, regional handlooms, and boutique apparel."
+    },
+    {
+      question: "Is my shopping data secure with Aeyra?",
+      answer: "Yes, your shopping data is protected with enterprise-grade security and privacy measures to ensure your information remains safe and private."
+    }
+  ];
+
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -104,32 +125,14 @@ const AeyraLandingPage = () => {
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
-          {
-            "@type": "Question",
-            "name": "What is Aeyra?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Aeyra is an AI-powered agentic shopping assistant that helps you discover products from high-quality Indian brands and boutiques on Shopdibz with personalized recommendations."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "How does agentic shopping work?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Tell Aeyra what you need, and it searches our curated collection to find perfect matches. You can explore, compare, and complete purchases with AI guidance throughout."
-            }
-          },
-          {
-            "@type": "Question",
-            "name": "Is my shopping data secure with Aeyra?",
-            "acceptedAnswer": {
-              "@type": "Answer",
-              "text": "Yes, your shopping data is protected with enterprise-grade security and privacy measures to ensure your information remains safe and private."
-            }
+        "mainEntity": faqContent.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
           }
-        ]
+        }))
       }
     ]
   };
@@ -338,6 +341,21 @@ const AeyraLandingPage = () => {
             <Link href="https://www.shopdibz.com/aeyra/chat" className={styles.ctaBtn}>
               Start Your Journey
             </Link>
+          </div>
+        </section>
+
+        {/* FAQ Section */}
+        <section className={styles.faqSection}>
+          <div className={styles.sectionContainer}>
+            <h2 className={styles.sectionTitle}>Frequently Asked Questions</h2>
+            <div className={styles.faqGrid}>
+              {faqContent.map((faq, index) => (
+                <details key={index} className={styles.faqItem}>
+                  <summary className={styles.faqQuestion}>{faq.question}</summary>
+                  <p className={styles.faqAnswer}>{faq.answer}</p>
+                </details>
+              ))}
+            </div>
           </div>
         </section>
 
