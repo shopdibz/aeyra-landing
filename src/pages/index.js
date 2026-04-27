@@ -365,7 +365,7 @@ export default function AeyraLandingPage() {
                   <div className="demo-msg-row">
                     <div className="demo-msg-bot">
                       <p className="demo-bot-text">
-                        I found these gorgeous handloom cotton sarees that feel perfect for school and summer weather 🌿☀️ The <strong style={{ color: 'var(--peacock-1)' }}>Saaj Hara pastel green saree</strong> and <strong style={{ color: 'var(--peacock-1)' }}>Meethi Gulab cotton candy pink saree</strong> are soft, fresh, and super pretty, while the <strong style={{ color: 'var(--peacock-1)' }}>Nayra blue saree</strong> is a cool, easy choice for a polished everyday look. Pair them with simple flats and a neat blouse for a comfy, school-friendly vibe ✨
+                        I found these gorgeous handloom cotton sarees that feel perfect for office and summer weather 🌿☀️ The <strong style={{ color: 'var(--peacock-1)' }}>Saaj Hara pastel green saree</strong> and <strong style={{ color: 'var(--peacock-1)' }}>Meethi Gulab cotton candy pink saree</strong> are soft, fresh, and super pretty, while the <strong style={{ color: 'var(--peacock-1)' }}>Nayra blue saree</strong> is a cool, easy choice for a polished everyday look. Pair them with simple flats and a neat blouse for a comfy, office vibe.
                       </p>
 
                       {/* Product Carousel */}
