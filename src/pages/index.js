@@ -19,11 +19,11 @@ export default function AeyraLandingPage() {
   useEffect(() => {
     const revealEls = document.querySelectorAll('.reveal');
     const revealObserver = new IntersectionObserver((entries) => {
-      entries.forEach(e => { 
-        if (e.isIntersecting) e.target.classList.add('visible'); 
+      entries.forEach(e => {
+        if (e.isIntersecting) e.target.classList.add('visible');
       });
     }, { threshold: 0.12 });
-    
+
     revealEls.forEach(el => revealObserver.observe(el));
     return () => revealObserver.disconnect();
   }, []);
@@ -42,8 +42,8 @@ export default function AeyraLandingPage() {
   const handleSmoothScroll = (e, targetId) => {
     e.preventDefault();
     const target = document.querySelector(targetId);
-    if (target) { 
-      target.scrollIntoView({ behavior: 'smooth' }); 
+    if (target) {
+      target.scrollIntoView({ behavior: 'smooth' });
     }
     setIsNavOpen(false); // Close mobile nav after clicking
   };
@@ -228,7 +228,7 @@ export default function AeyraLandingPage() {
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
-        
+
       </Head>
 
       {/* FLOATING CHAT BUTTON */}
@@ -264,7 +264,7 @@ export default function AeyraLandingPage() {
 
         <div className="hero-logo">
           <img src="https://aeyra.shopdibz.com/assets/images/aeyra-header-logo.png"
-               alt="Aeyra — AI Shopping Companion" width="130" height="130" loading="eager" />
+            alt="Aeyra — AI Shopping Companion" width="130" height="130" loading="eager" />
         </div>
 
         <h1 className="hero-title">
@@ -274,10 +274,10 @@ export default function AeyraLandingPage() {
 
         <div className="hero-actions">
           <a href="https://www.shopdibz.com/aeyra/chat" className="btn-primary" target="_blank" rel="noopener noreferrer">
-             &nbsp;Meet Aeyra
+            &nbsp;Meet Aeyra
           </a>
           <a href="#story" className="btn-secondary" onClick={(e) => handleSmoothScroll(e, '#story')}>
-             &nbsp;Read the Story
+            &nbsp;Read the Story
           </a>
         </div>
 
@@ -353,11 +353,11 @@ export default function AeyraLandingPage() {
             <div className="reveal">
               <div className="chat-bubble-demo updated-demo">
                 <div className="chat-demo-inner">
-                  
+
                   {/* User Message */}
                   <div className="demo-msg-row flex-end">
                     <div className="demo-msg-user">
-                      Can you suggest stylish kurta options for a wedding under ₹2500?
+                      Show me some sarees i can wear at office. It should be perfect for summer weather?
                     </div>
                   </div>
 
@@ -365,7 +365,7 @@ export default function AeyraLandingPage() {
                   <div className="demo-msg-row">
                     <div className="demo-msg-bot">
                       <p className="demo-bot-text">
-                        I found three gorgeous wedding-ready options under ₹2500! The <strong style={{color: 'var(--peacock-1)'}}>Dola Silk Kurta Set With Orgenzza Sleeves</strong> and <strong style={{color: 'var(--peacock-1)'}}>Satin Dupion Kurta Set With Lace Work</strong> feel especially festive and polished, while the <strong style={{color: 'var(--peacock-1)'}}>Kotadoria Anarkali Kurta Set</strong> gives you a graceful, elegant silhouette for a wedding look. ✨💛
+                        I found these gorgeous handloom cotton sarees that feel perfect for school and summer weather 🌿☀️ The <strong style={{ color: 'var(--peacock-1)' }}>Saaj Hara pastel green saree</strong> and <strong style={{ color: 'var(--peacock-1)' }}>Meethi Gulab cotton candy pink saree</strong> are soft, fresh, and super pretty, while the <strong style={{ color: 'var(--peacock-1)' }}>Nayra blue saree</strong> is a cool, easy choice for a polished everyday look. Pair them with simple flats and a neat blouse for a comfy, school-friendly vibe ✨
                       </p>
 
                       {/* Product Carousel */}
@@ -379,9 +379,9 @@ export default function AeyraLandingPage() {
                             </div>
                           </div>
                           <div className="demo-product-info">
-                            <h4>Dola Silk Kurta Set With Orgenzza Sleeves</h4>
-                            <p className="demo-brand">RANGREZZWEARS</p>
-                            <p className="demo-price">₹2,499</p>
+                            <h4>Saaj Hara | Pastel Green Handloom Cotton Saree..</h4>
+                            <p className="demo-brand">Aakar</p>
+                            <p className="demo-price">₹1,299</p>
                             <div className="demo-skeleton-lines">
                               <div className="demo-line"></div>
                               <div className="demo-line short"></div>
@@ -402,9 +402,9 @@ export default function AeyraLandingPage() {
                             </div>
                           </div>
                           <div className="demo-product-info">
-                            <h4>Satin Dupion Kurta Set With Lace Work</h4>
-                            <p className="demo-brand">RANGREZZWEARS</p>
-                            <p className="demo-price">₹1,999</p>
+                            <h4>Meethi Gulab | Cotton Candy Pink Handloom</h4>
+                            <p className="demo-brand">Aakar</p>
+                            <p className="demo-price">₹3,999</p>
                             <div className="demo-skeleton-lines">
                               <div className="demo-line"></div>
                               <div className="demo-line short"></div>
@@ -425,9 +425,9 @@ export default function AeyraLandingPage() {
                             </div>
                           </div>
                           <div className="demo-product-info">
-                            <h4>Kotadoria Anarkali Kurta Set</h4>
+                            <h4>Nayra | Blue Handloom Cotton Saree</h4>
                             <p className="demo-brand">RANGREZZWEARS</p>
-                            <p className="demo-price">₹2,250</p>
+                            <p className="demo-price">₹1,750</p>
                             <div className="demo-skeleton-lines">
                               <div className="demo-line"></div>
                               <div className="demo-line short"></div>
@@ -481,7 +481,7 @@ export default function AeyraLandingPage() {
             <h2 className="section-title">Four things she does<br />that no app <em>ever has.</em></h2>
           </div>
           <div className="features-grid">
-            
+
             {/* Feature 1: She Listens (Audio Wave Icon) */}
             <div className="feature-card reveal">
               <div className="feature-icon">
@@ -546,7 +546,7 @@ export default function AeyraLandingPage() {
             <h2 className="section-title">From first word<br />to <em>perfect find.</em></h2>
           </div>
           <div className="steps-grid">
-            
+
             {/* Step 1: Tell Aeyra (Message Icon) */}
             <div className="step reveal">
               <div className="step-num">
@@ -661,7 +661,7 @@ export default function AeyraLandingPage() {
           <div className="faq-list">
             <div className={`faq-item reveal ${openFaqIndex === 0 ? 'open' : ''}`}>
               <button className="faq-question" onClick={() => toggleFaq(0)} aria-expanded={openFaqIndex === 0}>
-                 What exactly is Aeyra?
+                What exactly is Aeyra?
                 <span className="faq-icon">+</span>
               </button>
               <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 0 ? '500px' : '0' }}>
