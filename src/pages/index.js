@@ -295,7 +295,7 @@ export default function AeyraLandingPage() {
             <span className="chapter-label">Chapter One</span>
             <h2 className="chapter-title">Remember her?<br />The one who <em>just knew.</em></h2>
             <div className="chapter-body">
-              <p>There was always someone like her in every mohalla, every bazaar lane. The woman at the sari shop who'd say, <em>"Bhabhi, don't look at that one. Your daughter's wedding? Show me the date."</em> Then disappear into the back and return with something wrapped in tissue that made everyone cry at the reception.</p>
+              <p>There was always someone like her in every mohalla, every bazaar lane. The woman at the sari shop who'd say, <em>"Bhabhi, don't look at that one. Your daughter's wedding? Tell me the date."</em> Then disappear into the back and return with something wrapped in tissue that made everyone cry at the reception.</p>
               <p>Or your nani's trusted hakim, who didn't need a list of symptoms. He'd look at you once, ask about your sleep, and hand you something that actually worked.</p>
               <p>These people weren't guessing. <strong>They remembered you. They understood you. They cared about the outcome, not just the transaction.</strong></p>
               <div className="pull-quote">
