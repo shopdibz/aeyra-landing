@@ -664,7 +664,7 @@ export default function AeyraLandingPage() {
                 What exactly is Aeyra?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 0 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Aeyra is India's first agentic shopping companion, an AI-powered assistant built on Shopdibz that helps you discover products from high-quality Indian brands and boutiques through personalised, conversational guidance. She's not a search bar. She listens, remembers, and genuinely cares about finding you the right thing.</div>
               </div>
             </div>
@@ -673,7 +673,7 @@ export default function AeyraLandingPage() {
                 How is Aeyra different from a regular shopping app?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 1 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Regular apps give you filters and sorting. Aeyra gives you a conversation. You describe what you need or how you're feeling and she interprets your intent, searches contextually, and returns recommendations that feel personally chosen. She also learns your preferences over time, so the experience improves the more you interact.</div>
               </div>
             </div>
@@ -682,7 +682,7 @@ export default function AeyraLandingPage() {
                 What kind of Indian brands can I find through Aeyra?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 2 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Shopdibz features a carefully curated collection of Indian independent brands, artisan crafts, traditional handlooms, natural skincare, regional boutique fashion, heritage jewellery, and more. These are real makers, often small studios and home-grown businesses, verified and listed on Shopdibz for their quality and authenticity.</div>
               </div>
             </div>
@@ -691,7 +691,7 @@ export default function AeyraLandingPage() {
                 Is my data safe with Aeyra?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 3 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Yes. Your shopping data and preferences are protected with enterprise-grade security and privacy measures on Shopdibz's infrastructure. Aeyra uses your context only to personalise your experience. She never sells or shares your data with third parties.</div>
               </div>
             </div>
@@ -700,7 +700,7 @@ export default function AeyraLandingPage() {
                 I'm an Indian brand, how do I get listed?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 4 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Indian brands and boutiques can register at <a href="https://www.brandhub.shopdibz.com" style={{ color: 'var(--gold)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">brandhub.shopdibz.com</a>. Once verified, your products become discoverable by Aeyra for thousands of discerning shoppers who are actively looking for exactly what you make. No massive marketing budget needed, just real craft and real soul.</div>
               </div>
             </div>
@@ -709,7 +709,7 @@ export default function AeyraLandingPage() {
                 Is Aeyra free to use?
                 <span className="faq-icon">+</span>
               </button>
-              <div className="faq-answer" role="region" style={{ maxHeight: openFaqIndex === 5 ? '500px' : '0' }}>
+              <div className="faq-answer" role="region">
                 <div className="faq-answer-inner">Yes, Aeyra is completely free for shoppers. Simply visit <a href="https://www.shopdibz.com/aeyra/chat" style={{ color: 'var(--gold)', textDecoration: 'none' }} target="_blank" rel="noopener noreferrer">shopdibz.com/aeyra/chat</a> to begin your conversation. No account required to start exploring.</div>
               </div>
             </div>

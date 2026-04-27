@@ -824,7 +824,10 @@ nav.scrolled {
 .faq-list{max-width:720px;margin:4rem auto 0;}
 .faq-item{
   border-bottom:1px solid var(--border);
-  overflow:hidden;
+}
+.faq-list .faq-item.reveal{
+  opacity:1;
+  transform:none;
 }
 .faq-question{
   width:100%;
@@ -854,12 +857,20 @@ nav.scrolled {
 .faq-answer{
   max-height:0;
   overflow:hidden;
-  transition:max-height 0.45s var(--transition);
+  opacity:0;
+  visibility:hidden;
+  transition:max-height 0.45s var(--transition), opacity 0.25s ease, visibility 0s linear 0.45s;
+}
+.faq-item.open .faq-answer{
+  max-height:400px;
+  opacity:1;
+  visibility:visible;
+  transition:max-height 0.45s var(--transition), opacity 0.25s ease;
 }
 .faq-answer-inner{
   padding:0 0 1.5rem;
   font-size:0.95rem;
-  color:var(--dim);
+  color:var(--muted);
   line-height:1.85;
   font-weight:300;
 }
